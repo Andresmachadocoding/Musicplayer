@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+:root {
+  
+  ---background-color-second: #272727;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  font-size: 20px;
+  overflow-x: hidden;
+  background-color: #171717;
+}
+
+img {max-width: 100%;}
+
+a {text-decoration: none;}
+
+/* Rows and columns */
+
+.row-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.row-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.row-space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.column-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#container {
+  margin: 0;
+  padding: 0;
+  width: 1882px;
+  max-width: 1882px;
+  height: 1396px;
+  background-color: #171717;
+  box-shadow: 0px 3.99142px 62.8649px 19.9571px rgba(24, 24, 24, 0.15);
+border-radius: 9.53768px
+}
+
+/*  Menu */ 
+
+#menu {
+  padding: 5px;
+  width: 286px;
+  height: 1320px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 75px;
+  background-color: var(---background-color-second);
+}
+
+#menu div {margin: 10px 0px 31px 37px;}
+
+#menu div img {margin-right: 5px;}
+
+#menu div h1 {
+  color: white;
+  font-weight: 700;
+  font-weight: 700;
+}
+
+#menu #navbar {
+  margin: 0;
+  padding: 10px;
+  width: 247.98px;
+  height: 207.92px;
+  gap: 9.50px;
+  list-style: none;
+}
+
+#menu nav {
+  width: 100%;
+  height: 100%;
+}
+
+#menu nav ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#menu nav ul span {
+  width: 100%;
+  background-color: #EE4950;
+}
+
+#menu nav ul li {
+  padding: 5px;
+  font-weight: 700;
+  font-size: 19px;
+  color: white;
+}
+
+#menu nav ul li img {
+  margin-right: 10px;
+  width: 19px;
+  height: 17px;
+}
+
+#menu nav ul li p {text-align: left;}
+
+#menu #playlist {
+  margin-top: 100px;
+  width: 264px;
+  height: 289px;
+  list-style: none;
+  position: absolute;
+  top: 246px;
+}
+
+#menu #playlist li {
+  margin: 10px 0;
+  width: 100%;
+  font-size: 17px;
+  font-weight: 500;
+  color: #959D99;
+}
+
+#menu #playlist li p {
+  color: #2E3A59;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+#menu #playlist li img {margin: 0 10px;}
+
+#menu #playlist #playlist-graphycs {color: #F3777D;}
+
+#banner {
+  width: 1003px;
+  height: 453px;
+  position: absolute;
+  top: 42px;
+  left: 342px;
+  background-image: url('../assets/Banner.png');
+  box-shadow:  0px 0px 350px 0px black inset;
+}
+
+#banner #search {
+  padding: 0 12px 0 10px;
+  width: 484px;
+  height: 47px;
+  position: absolute;
+  top: 19px;
+  left: 259px;
+  background-color: white;
+  border-radius: 4.77px;
+  opacity: 90%;
+}
+
+#banner #search div img {margin: 0 5px;}
+
+#banner #banner-genre{
+  width: 55px;
+  height: 158px;
+  position: absolute;
+  left: 9px;
+  bottom: 47px;
+  list-style: none;
+  color: #959D99;
+  font-size: 13px;
+  font-weight: 400;
+  gap: 7px;
+}
+
+#banner #banner-genre span {
+  color: #272727;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+#banner h2 {
+  width: 122px;
+  height: 16px;
+  color: #FAFAFA;
+  font-weight: 700;
+  text-align: right;
+  font-size: 13px;
+  position: absolute;
+  right: 28px;
+  bottom: 215px;
+}
+
+#banner #banner-artist {
+  width: 156px;
+  height: 74px;
+  position: absolute;
+  right: 28px;
+  bottom: 108px;
+  align-items: flex-end;
+}
+
+#banner #banner-artist h4 {
+  color: #FAFAFA;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+#banner #banner-artist h3 {
+  color: #FAFAFA;
+  font-weight: 700;
+  font-size: 38px;
+  text-align: right;
+}
+
+#banner #banner-action {
+  width: 207px;
+  height: 38px;
+  gap: 22px;
+  position: absolute;
+  top: 387px;
+  left: 766px;
+}
+
+#banner #banner-action img {margin: 0 10px;}
+
+#banner #banner-action button {
+  margin: 0 5px;
+  padding: 9px;
+  width: 95px;
+  height: 38px;
+  color: white;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: #EE4950;
+  border-radius: 3px;
+}
+
+#streams {
+  padding: 14px 19px 10px 14px;
+  width: 436px;
+  height: 749px;
+  position: absolute;
+  top: 42px;
+  left: 1395px;
+   background-color: #1E1E1E;
+}
+
+#streams #streams-header {
+ padding: 2px 0px 0px 0px;
+ width: 403px;
+ height: 37px;
+ gap: 96px;
+}
+
+#streams #streams-header h2 {
+  width: 100%;
+  height: 22px;
+  color: #FAFAFA;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+#streams #streams-header div {
+  padding: 3.8px 9.5px 3.8px 4.7px;
+  width: 129px;
+  height: 35px;
+  background-color: #49504D;
+  color: #FAFAFA;
+  font-size: 500;
+  font-size: 15px;
+  border-radius: 3.8px;
+  gap: 8px;
+}
+
+#streams #streams-header div div {
+  width: 54px;
+  height: 27px;
+  padding: 4px;
+  background-color: #EE4950;
+  border-radius: 2px;
+}
+
+#streams ul {
+  margin-top: 23px;
+  width: 403px;
+  height: 618px;
+  gap: 14px;
+}
+
+#streams ul li {width: 100%;}
+
+
+#streams ul li p {
+  margin: 0 5px;
+  color: white;
+}
+
+#streams ul li div {margin: 0 5px;}
+
+#streams ul li div h3 {
+  width: 100%;
+  color: #FAFAFA;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: left;
+}
+
+#streams ul li div h5 {
+  width: 100%;
+  color: #AFB6B2;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: left;
+}
+
+#streams ul li img {margin: 0 10px;}
+
+#streams p {
+  width: 100%;
+  color: #AFB6B2;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+}
+
+#streams p img {margin: 0 10px;}
+
+#categories {
+  width: 432px;
+  height: 453px;
+  position: absolute;
+  left: 1398px;
+  top: 840px;
+}
+
+#categories #categories-header {width: 100%;}
+
+#new-releases-header h3,
+#YouMayLike-header h3,
+#categories #categories-header h3,
+#RecentlyPlayed-header h3 {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+}
+#YouMayLike-header p,
+#new-releases-header p,
+#categories #categories-header p,
+#RecentlyPlayed-header p {
+  color: #F3777D;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: right;
+}
+
+#categories #cards {
+  margin-top: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  gap: 13px;
+}
+
+#categories #cards .card {
+  width: 218px;
+  height: 91px;
+  color: #FAFAFA;
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+
+
+#categories #cards .card:nth-Child(1) {
+  background-image: url(../assets/Podcast.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#categories #cards .card:nth-Child(2) {
+  background-image: url(../assets/Romance.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#categories #cards .card:nth-Child(3) {
+  background-image: url(../assets/Rock.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#categories #cards .card:nth-Child(4) {
+  background-image: url(../assets/Chill.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#categories #cards .card:nth-Child(5) {
+  background-image: url(../assets/Christmas.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
+#categories #cards .card:nth-Child(6) {
+  background-image: url(../assets/Hiphop.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#categories #cards .card:nth-Child(7) {
+  background-image: url(../assets/Jazz.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
+#new-releases {
+  width: 1003px;
+  height: 280px;
+  gap: 19px;
+  position: absolute;
+  left: 342px;
+  top: 525px;
+}
+#YouMayLike #YouMayLike-header,
+#new-releases-header,
+#RecentlyPlayed-header {
+  width: 1003px;
+  height: 30px;
+  gap: 33px;
+}
+
+ #new-releases-header h3 img,
+#RecentlyPlayed-header img {margin: 0 10px;}
+
+#YouMayLike ul li,
+#RecentlyPlayed ul li{
+  margin: 1px 0;
+  width: 100%;
+}
+
+#new-releases ul li h4,
+#YouMayLike ul li h4 {
+  margin: 1px 0;
+  width: 100%;
+  color: #E4E7E5;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: left;
+}
+
+#new-releases ul li h5,
+#YouMayLike ul li h5 {
+ margin: 1px 0;
+  width: 100%;
+  color: #AFB6B2;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: left;
+}
+
+#YouMayLike {
+  width: 1003px;
+  height: 184px;
+  position: absolute;
+  top: 844px;
+  left: 345px;
+}
+
+#YouMayLike ul li {
+  margin: 10px 0;
+  width: 100%;
+}
+
+#YouMayLike ul li img {
+  margin: 10px 0;
+  border-radius: 100px;
+}
+
+#RecentlyPlayed {
+  width: 1003px;
+  height: 228px;
+  gap: 9px;
+  position: absolute;
+  left: 342px;
+  top: 1166px;
+}
+
+#RecentlyPlayed ul {width: 100%;}
+
+#RecentlyPlayed ul li img {margin: 0 10px;}
+
+#RecentlyPlayed ul li h4 {
+  margin: 0 5px;
+  color: #AFB6B2;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+#RecentlyPlayed ul li p {
+  color: #7A8580;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+#RecentlyPlayed ul li span {color: #F3777D;}
+
+#playingtab  {
+  width: 1885px;
+  height: 75px;
+  position: absolute;
+  top: 1320px;
+  background-color: var(---background-color-second);
+
+}
+
+#playingtab .playingtab-musicplay {
+  width: 304px;
+  height: 47px;
+}
+
+#playingtab .playingtab-musicplay img {
+  width: 30px;
+  margin: 0 10px;}
+
+#playingtab #songplayinginfo {
+  width: 1123px;
+  height: 59px;
+}
+
+#playingtab #songplayinginfo div {width: auto;}
+
+#playingtab #songplayinginfo div p {
+  margin: 0 15px;
+  color: white;
+  align-items: flex-end;
+}
+
+#playingtab #songplayinginfo #progressbar {
+  width: 698px;
+  height: 4px;
+  background-color: #E4E7E5;
+}
+
+#playingtab #songplayinginfo #progressbar div {
+  width: 473px;
+  height: 4px;
+  background-color: #EE4950;
+}
+
+#playingtab #songplayinginfo #progressbar p {opacity: 0;}
+
+#playingtab #songplayinginfo div h3{
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 19px;
+  font-weight: 600;
+  position: absolute;
+  top: 10px;
+}
+
+#playingtab #songplayinginfo div h3 span {
+  margin-left : 5px;
+  font-weight: 400;
+  color: #AFB6B2;
+}
